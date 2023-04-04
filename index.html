@@ -1,16 +1,856 @@
+
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Test delegación dominio</title>
-</head>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> FBM Portfolio</title>
+        
+
+        <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+<!-- 
+
+Sentra Template
+
+https://templatemo.com/tm-518-sentra
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/e404-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
 <body>
-  <h1>Delegacion de dominio</h1>
-  <p>Esta es una página de prueba básica para chequear que este apuntando correctamente la delegación de dominio.</p>
-  <ul>
-    <li>Elemento de lista 1</li>
-    <li>Elemento de lista 2</li>
-    <li>Elemento de lista 3</li>
-  </ul>
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#featured">Power BI Dashboards</a></li>
+                        <li><a href="#tableau-dashboards">Tableau Dashboards</a></li>
+                        <li><a href="#blog">Medium Stories</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a target="_blank" href="https://www.linkedin.com/in/fernando-beneitez">Fernando <em> Benéitez </em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#featured">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Power BI Dashboards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tableau-dashboards">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Tableau Dashboards
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#featured3">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Google Data Studio Dashboards
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#projects">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Tableau Dashboards
+                        </a>
+                    </li>
+                    -->
+
+                    <li>
+                        <a href="#google-colab">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Google Colabs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Medium Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Contacto
+                        </a>
+                    </li>
+
+
+                    <br><br>
+                    <li></li>
+                    <li></li>
+                    <!--
+                    <li>
+                        <a id=semihide-item href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            off topic   <br>
+                            work flow != work + flow 
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </nav>
+
+  
+            <ul class="social-icons">
+                <!--<li><a target="_blank" href="https://twitter.com/FerBeneitez"><i class="fa fa-facebook"></i></a></li>-->
+                <li><a target="_blank" href="https://medium.com/@beneitez.fernando"><i class="fa-brands fa-medium"></i></a></li>
+                <li><a target="_blank" href="https://github.com/FerBene"><i class="fa-brands fa-github"></i></a></li>
+                <li><a target="_blank" href="https://drive.google.com/drive/search?q=owner:me%20(type:application/vnd.google.colaboratory%20||%20type:application/vnd.google.colab)"><i class="fa-brands fa-google-drive"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/FerBeneitez"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/dataadddict"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/fernando-beneitez"><i class="fa fa-linkedin fa-beat-fade fa-lg"></i></a></li>
+                <!--
+                <li><i class="fa-solid fa-person-running" style="color: #ffffff;"></i></li>
+                <li><i class="fa-solid fa-person-biking" style="color: #ffffff;"></i></li>
+                <li><i class="fa-solid fa-person-swimming" style="color: #ffffff;"></i></li>/***/
+                -->
+            </ul>
+
+        </div>
+
+
+            
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                       <div class="info">
+                        <div>
+                          <h1> Power BI <br> Dashboards</h1>
+                          <p><br></p>
+                          <div class="white-button button">
+                              <a href="#featured"> Ver Más </a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Tableau <br> Dashboards</h1>
+                          <p><br></p>
+                          
+                          <div class="white-button button">
+                              <a href="#tableau-dashboards"> Ver Más </a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1>Google Colabs<br>Python</h1>
+                          <p><br></p>
+                          
+                          <div class="white-button button">
+                              <a href="#google-colab"> Ver Más </a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item-4">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1> Medium <br> Stories</h1>
+                          <p><br></p>
+                          
+                          <div class="white-button button">
+                              <a href="#blog"> Ver Más </a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-content">
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1>Power BI <br><em>Dashboards</em></h1>
+                    <p><br></p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/BodegasUvas.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiOTQ2YWI2N2QtZWM0MC00YjU2LWI4YTQtYmQ5OTIzYWMxZTg5IiwidCI6ImM1YzE2MTA1LTlmYzYtNDRjYi1iYmI5LTU5NTZhYTE3OWVkZiIsImMiOjl9">Ver detalle en Power BI</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>¿Donde estan las bodegas argentinas?</h4>
+                                <span>Bodegas por provincia</span>
+                                <p>Sabemos que la cultura vitivinícola argentina tiene su epicentro en Mendoza, donde se concentran el 70% de las bodegas. ¿En que otras provincias se produce el vino argentino?</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Dolares v3.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a target="_blank"    href="https://app.powerbi.com/view?r=eyJrIjoiOGE1ZTA5Y2ItNDk1ZS00ZjgxLWJiNGMtMWFjNjA4ZGY2NjZmIiwidCI6ImM1YzE2MTA1LTlmYzYtNDRjYi1iYmI5LTU5NTZhYTE3OWVkZiIsImMiOjl9">Ver detalle en Power BI</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>¿Cuanto cobran los empleados argentinos?</h4>
+                                <span>Sueldo neto medio en dólares</span>
+                                <p>Los <strong>salarios en dólares en Argentina </strong> cayeron fuertemente los ultimos años. En esta serie temporal se puede ver la evolución desde inicios de 2009 hasta fines 2022</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/AysARRHH.png" alt="">
+                                <div class="featured-button button">
+                                    <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMjcwNjViMjAtYWJjYy00NDBiLTlhN2ItNDA5NDZmNmI2MzZhIiwidCI6ImM1YzE2MTA1LTlmYzYtNDRjYi1iYmI5LTU5NTZhYTE3OWVkZiIsImMiOjl9">Ver detalle en Power BI</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4> AySA Innova 2022 #1</h4>
+                                <span> Recursos Humanos AySA </span>
+                                <p> Desde la empresa AySA se generó una convocatoria interna a presentar proyectos de innovación. El siguiente tablero fue parte de la propuesta presentada con el fin de incorporar el uso de Power BI en el area de recursos humanos. Los datos utilizados son datos simulados de forma aleatoria. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/Presu.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMWExMzFjMjAtMjcyYi00ZjRiLWFhNDEtZWIzM2ZmMzhkZTE2IiwidCI6ImM1YzE2MTA1LTlmYzYtNDRjYi1iYmI5LTU5NTZhYTE3OWVkZiIsImMiOjl9">Ver detalle en Power BI</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4> AySA Innova 2022 #2</h4>
+                                <span> Presupuesto AySA </span>
+                                <p> Desde la empresa AySA se generó una convocatoria interna a presentar proyectos de innovación. El siguiente tablero fue parte de la propuesta presentada con el fin de incorporar el uso de Power BI para el directorio de la compañia. <strong>No se usaron datos reales.</strong></p>
+                            </div>
+                        </div>
+
+
+                        <!--
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_1.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Cras commodo odio</h4>
+                                <span>Aliquam</span>
+                                <p>#5 Mauris lacinia pretium libero, ut tincidunt lacus molestie ornare. Phasellus a facilisis erat. Praesent eleifend nibh mauris, quis sodales lorem convallis pulvinar.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_3.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sed at massa turpis</h4>
+                                <span>Curabitur</span>
+                                <p>#6 Vestibulum tincidunt ornare ligula vel molestie. Curabitur hendrerit mauris mollis ipsum vulputate rutrum. Phasellus luctus odio eget dui imperdiet.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_2.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Aliquam mollis lacus</h4>
+                                <span>Suspendisse</span>
+                                <p>#7 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_1.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Mauris lacinia pretium</h4>
+                                <span>Vestibulum</span>
+                                <p>#8 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_3.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Continue Reading</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Proin sit amet fringilla erat</h4>
+                                <span>Convallis</span>
+                                <p>#9 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="tableau-dashboards" class="content-section">
+                <div class="section-heading">
+                    <h1>Tableau <br><em>Dashboards</em></h1>
+                    <p><br></p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/WiP.jpg" alt="">
+                                <div class="tableau-dashboards-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Tableau Public</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span>Tablero #1</span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/WiP.jpg" alt="">
+                                <div class="tableau-dashboards-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Tableau Public</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span>Tablero #2</span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/WiP.jpg" alt="">
+                                <div class="tableau-dashboards-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Tableau Public</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span> Tablero #3 </span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/WiP.jpg" alt="">
+                                <div class="tableau-dashboards-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Power BI</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span> Tablero #4 </span>
+                                <p> </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            <section id="projects" class="content-section">
+                
+           
+                <div class="section-heading">
+                    <h1>Tableau<br><em>Dashboards</em></h1>
+                    <p>Praesent pellentesque efficitur magna, 
+                    <br>sed pellentesque neque malesuada vitae.</p>
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_1.jpg" data-lightbox="image"><img src="img/portfolio_1.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_2.jpg" data-lightbox="image"><img src="img/portfolio_2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_3.jpg" data-lightbox="image"><img src="img/portfolio_3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/portfolio_big_4.jpg" data-lightbox="image"><img src="img/portfolio_4.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/portfolio_big_5.jpg" data-lightbox="image"><img src="img/portfolio_5.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            -->
+            
+
+            <section id="google-colab" class="content-section">
+                <div class="section-heading">
+                    <h1>Google <br><em>Colabs</em></h1>
+                    <p><br></p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/googlecolab.png" alt="">
+                                <div class="google-colab-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Google Colab</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span>Colab #1</span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/googlecolab.png" alt="">
+                                <div class="google-colab-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Google Colab</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span>Colab #2</span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/googlecolab.png" alt="">
+                                <div class="google-colab-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Google Colab</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span> Colab #3 </span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/googlecolab.png" alt="">
+                                <div class="google-colab-button">
+                                    <a target="_blank" href="https://public.tableau.com/app/profile/fernando.beneitez">Ver detalle en Google Colab</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Sección en construcción</h4>
+                                <span> Colab #4 </span>
+                                <p> </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+            <!--
+            <section id="video" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h1>This is a <em>company</em> presentation.</h1>
+                            <p>Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.</p>
+                        </div>
+                        <div class="text-content">
+                            <p>In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit justo sit amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies augue. Duis condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis ultricies ligula ac gravida.</p>
+                        </div>
+                        <div class="accent-button button">
+                            <a href="#blog">Continue Reading</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box-video">
+                            <div class="bg-video" style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                                <div class="bt-play">Play</div>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="100%" height="520" src="https://www.youtube.com/embed/j-_7Ub-Zkow?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+
+            <section id="blog" class="content-section">
+                <div class="section-heading">
+                    <h1>Medium<br><em>Stories</em></h1>
+                    <p><br></p>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">Febrero 2023</a></li>
+                              <li><a href="#tab2">Marzo 2023</a></li>
+                              <li><a href="#tab3">Abril 2023</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/RevIndFuturist.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Inteligencia Artificial y ChatGPT</h4>
+                                                    <span>13 Febrero 2023</span>
+                                                    <p>A las puertas de un nuevo orden social. Ningún usuario común puede decir a ciencia cierta cual es el plan de la empresa <strong><i> OpenAI </strong></i> pero si tenemos algunas pistas al respecto. Con la idea de ordenar algunas ideas al respecto surgió el siguiente artículo.</p>
+
+                                                    <div class="accent-button button">
+                                                        <a target="_blank" href="https://medium.com/@beneitez.fernando/inteligencia-artificial-y-chatgpt-45e051f0c3fc">Leer artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>                              
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Robots.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>ChatGPT, CriolloBOT y “El Cuento de la buena pipa”</h4>
+                                                    <span>13 Febrero 2023</span>
+                                                    <p>Usted esta a punto de desperdiciar 4 minutos de su vida en un texto intrascendente. Puede usar ese tiempo mirando el vacío en silencio que será más productivo. Si valora un poco su tiempo no lo lea!</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a target="_blank" href="https://medium.com/@beneitez.fernando/chatgpt-criollobot-y-el-cuento-de-la-buena-pipa-40a1d7c199aa">Leer artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/pesosQuemadosv3.jpg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Evolución del Ingreso en Argentina 2009–2022</h4>
+                                                    <span>17 Febrero 2023</span>
+                                                    <p> Con la intención de analizar la evolución del poder adquisitivo del salario en Argentina durante los últimos 13 años se plantearon 2 series temporales. Estas series son la respuesta a dos preguntas "¿cuántos dólares se pueden comprar con un sueldo neto?", y "¿cuántas canastas básicas totales se pueden comprar con un sueldo neto?
+                                                    <div class="accent-button button">
+                                                        <a target="_blank" href="https://medium.com/@beneitez.fernando/evoluci%C3%B3n-del-ingreso-en-argentina-2009-2022-88be2341b2d">Leer artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                    </ul>
+                                </div>                                
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Imprenta.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Artículo #4</h4>
+                                                    <span>31 Marzo 2023</span>
+                                                    <p>Este es un texto de prueba para una sección en construcción. Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Leer Artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Imprenta.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Artículo #5</h4>
+                                                    <span>31 Marzo 2023</span>
+                                                    <p>Este es un texto de prueba para una sección en construcción. Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Leer Artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Imprenta.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Artículo #6</h4>
+                                                    <span>31 Marzo 2023</span>
+                                                    <p>Este es un texto de prueba para una sección en construcción. Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Leer Artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Imprenta.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Artículo #7</h4>
+                                                    <span>10 Abril 2023</span>
+                                                    <p>Este es un texto de prueba para una sección en construcción. Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Leer Artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Imprenta.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Artículo #8</h4>
+                                                    <span>20 Abril 2023</span>
+                                                    <p>Este es un texto de prueba para una sección en construcción. Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Leer Artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="img/Imprenta.png" alt="">
+                                                <div class="text-content">
+                                                    <h4>Artículo #9</h4>
+                                                    <span>30 Abril 2023</span>
+                                                    <p>Este es un texto de prueba para una sección en construcción. Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="#contact">Leer Artículo en Medium</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="content-section">
+
+                <div id="map">
+                
+                	<!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+                    <iframe style="border-radius:8px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280470.5635422706!2d-58.52917753676671!3d-34.62806544931439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cdca17aad%3A0xb76fe46c571f5363!2sAv.%20Rivadavia%20100%2C%20C1002AAN%20CABA!5e0!3m2!1ses-419!2sar!4v1680270592964!5m2!1ses-419!2sar" width="90%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                
+                
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1>Contacto <br><em> FBM </em></h1>
+                        <p> 
+                        <br></p>
+                        
+                    </div>
+                    <div class="section-content">
+                        <form id="contact" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Nombre..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Enviar mensaje</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2SeONRNyVDQQ4hVu6ZkMFF?utm_source=generator&theme=0&autoplay=1" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                -->
+            </section>
+
+          
+
+            <section class="footer">
+                <p>Copyright &copy; 2023. E404 Web Design.</p>
+            </section>
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a71a74ff1d.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
+
