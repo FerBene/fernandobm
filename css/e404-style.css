@@ -990,6 +990,7 @@ header {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
+
 .box-video:hover .bt-play {
   transform: scale(1.1);
 }
@@ -1222,8 +1223,6 @@ header {
   color: #fff;
   font-weight: 600;
 }
-
-
 
 /* Responsive Style */
 
