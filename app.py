@@ -8,3 +8,7 @@ def hiddenProject():
 
 if __name__ == '__main__':
     app.run()
+
+@app.route("/about")
+def about():
+	return "HELLO about"
